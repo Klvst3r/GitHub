@@ -1,0 +1,108 @@
+1 . Introducción a Git
+
+https://styde.net/introduccion-a-git/
+
+Git en pocas palabras es un controlador de versiones distribuido y quizás lo primero que pienses al escuchar este término es ¿Qué es un controlador de versiones? Un controlador de versiones es un sistema que registra los cambios en un archivo o conjunto de archivos a través del tiempo para que se puedan recuperar versiones específicas de los mismos más adelante.
+
+Ahora, ¿Por qué es distribuido? Cuando los usuarios descargan la última versión de los archivos no solo están descargando los archivos; sino que también descargan una copia fiel y exacta (copia de seguridad) del repositorio (carpeta donde se alojan estos archivos) de esta manera si dicho repositorio se pierde, cualquiera de los usuarios que descargaron estos archivos, pueden restaurar el estado del mismo haciendo uso de su copia de seguridad. Por otra parte eso permite que se puedan tener varios repositorios remotos para poder trabajar y colaborar con diferentes grupos de personas al mismo tiempo en un mismo proyecto, cosa que no es posible con los sistemas centralizados.
+
+
+
+Git en pocas palabras es un controlador de versiones distribuido y quizás lo primero que pienses al escuchar este término es ¿Qué es un controlador de versiones? Un controlador de versiones es un sistema que registra los cambios en un archivo o conjunto de archivos a través del tiempo para que se puedan recuperar versiones específicas de los mismos más adelante.
+
+Ahora, ¿Por qué es distribuido? Cuando los usuarios descargan la última versión de los archivos no solo están descargando los archivos; sino que también descargan una copia fiel y exacta (copia de seguridad) del repositorio (carpeta donde se alojan estos archivos) de esta manera si dicho repositorio se pierde, cualquiera de los usuarios que descargaron estos archivos, pueden restaurar el estado del mismo haciendo uso de su copia de seguridad. Por otra parte eso permite que se puedan tener varios repositorios remotos para poder trabajar y colaborar con diferentes grupos de personas al mismo tiempo en un mismo proyecto, cosa que no es posible con los sistemas centralizados.
+Instalación
+
+Antes de instalar vamos a comprobar si no tenemos ya instalado git, ya que es posible que lo tengan instalado en sus equipos, para comprobarlo ejecutamos en la consola
+git --version
+
+
+Si no lo tenemos instalado podemos hacerlo de la siguiente manera
+Linux
+Fedora
+
+sudo yum install git-core
+
+Ubuntu
+
+sudo apt-get install git
+
+Mac
+
+Para poder instalarlo en Mac es necesario primero tener instalado Xcode command line tools lo cual pueden lograrlo descargando Xcode desde la AppStore. Después de eso la opción más recomendada es hacerlo por medio de homebrew, por lo que primero deben instalarlo en sus equipos y después ejecutar en la terminal
+
+brew install git
+
+
+Windows
+
+Para usuarios Windows sólo deben ejecutar el instalador, el cuál pueden descargar desde aquí y seguir los pasos en pantalla.
+
+
+Listado de comandos 
+# git
+
+
+Configuración
+
+
+
+Lo primero que debemos hacer justo después de instalar git es decirle quienes somos, esto lo hacemos proporcionándole a git nuestro nombre y correo electrónico, lo cual podemos hacerlo con los siguientes comandos
+# Indicar nuestro nombre
+git config --global user.name "Nuestro Nombre"
+
+# Indicar nuestro correo electrónico
+git config --global user.email "nuestro@correo.com"
+
+
+Repositorio local
+
+Para inicializar un repositorio primero debemos crear un directorio donde vamos a almacenar nuestro proyecto, luego en la consola nos dirigimos a el y una vez dentro ejecutamos
+git init
+
+
+Una vez que estemos trabajando con el código podremos ver el estatus de nuestro proyecto con el comando
+git status
+
+
+Para añadir archivos al stage y poder rastrear los cambios que se hayan tenido sobre ellos ejecutamos
+# Para añadir un solo archivo
+git add nombre_del_archivo
+
+# Para añadir todo lo que hay en el directorio actual
+git add --all
+# o bien
+git add .
+
+
+Por último creamos un commit, los commits deben ir siempre con un mensaje el cuál pasamos con el parámetro -m como se muestra a continuación:
+
+git commit -m 'Primer commit'
+
+
+Esto es todo por esta primera lección, muy pronto publicaremos la segunda.
+
+
+Flojo de trabajo
+----------------
+ - Elegir una manzana 				------>			Crear archivo README.md
+ 	(Sin seguimiento)									(Sin seguimiento)
+ 
+ - Poner en elm ostrador			------>			Poner el contenido en Stage 
+ 	(Empezar a dar seguimiento) 						(Empezar a dar seguimiento)
+ 
+ - Pagar la manzana					------>			Realizar commit
+ 	(Registrar cambios)									(Registrar cambios)
+
+
+  	
+
+
+
+
+
+References:
+---------------
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+brew.sh
+

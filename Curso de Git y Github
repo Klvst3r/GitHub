@@ -1,0 +1,37 @@
+Git es actualmente el sistema controlador de versiones más popular entre los desarrolladores de software ¿Pero sabes por qué deberías usarlo? Hay personas que suelen copiar sus proyectos a otros directorios para poder mantener un respaldo del progreso en un momento dado, pero otras personas utilizan soluciones más inteligentes y menos propensas a errores y pérdidas de datos, esas personas utilizan un controlador de versiones como Git.
+
+Si no estás familiarizado aún con la línea de comandos, puedes dar tus primeros pasos con nuestro Curso básico de Terminal.
+https://styde.net/curso-basico-de-terminal/
+
+Un sistema controlador de versiones te permite guardar “fotografías” del estado de tu proyecto en cualquier instante, dándote la capacidad de restaurar ese estado en cualquier momento. El funcionamiento es simple pero a la vez muy poderoso, resultando en un requisito casi indispensable en el desarrollo de proyectos y es por eso que vamos a dedicar todo un curso a esta magnifica herramienta.
+
+https://es.wikipedia.org/wiki/Control_de_versiones
+
+
+Git desde cero
+
+    1 . Introducción a Git 8:09
+    2 . Stage 9:11
+    3 . Remotes 12:04
+    4 . Branches 12:20
+    5 . Conflictos 9:27
+    6 . Branches remotos y tags 10:42
+    7 . Rebase 7:22
+    8 . Rebase, Resolución de conflictos 8:00
+    9 . Rebase interactivo 13:20
+    10 . Historial y diferencias 5:28
+    11 . Configuración avanzada 4:29
+    12 . Guardado rápido temporal con stash en Git 10:25
+    13 . Reescribir el historial en Git 6:17
+    14 . Configuraciones en sistemas operativos 5:28
+    15 . Submódulos en Git, parte 1 10:50
+    16 . Submódulos en Git, parte 2 11:21
+    17 . Reflog 7:33
+    18 . git-flow, parte 1 11:38
+    19 . git-flow, parte 2 11:39
+    20 . Pull Request 8:29
+    21 . Interfaces gráficas 10:19
+
+Lecciones adicionales
+
+    22 . Actualizar el fork de un repositorio de GitHub 
