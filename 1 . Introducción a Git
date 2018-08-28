@@ -39,7 +39,7 @@ Windows
 Para usuarios Windows sólo deben ejecutar el instalador, el cuál pueden descargar desde aquí y seguir los pasos en pantalla.
 
 
-Listado de comandos 
+Listado de comandos
 # git
 
 
@@ -87,15 +87,30 @@ Flojo de trabajo
 ----------------
  - Elegir una manzana 				------>			Crear archivo README.md
  	(Sin seguimiento)									(Sin seguimiento)
- 
- - Poner en elm ostrador			------>			Poner el contenido en Stage 
+
+ - Poner en elm ostrador			------>			Poner el contenido en Stage
  	(Empezar a dar seguimiento) 						(Empezar a dar seguimiento)
- 
+
  - Pagar la manzana					------>			Realizar commit
  	(Registrar cambios)									(Registrar cambios)
 
 
-  	
+
+
+
+Comandos
+--------------
+echo "Hello World" >> README.txt
+git init
+git status
+git add .
+git commit -m "Crear Archivo README.txt"
+subl README.txt
+touch license
+git status
+git add .
+git commit -m "Modificaciones"
+git log
 
 
 
@@ -106,3 +121,11 @@ References:
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 brew.sh
 
+
+Github Repositories
+----------------
+https://github.com/StydeNet
+https://github.com/StydeNet?page=2
+
+Curso de interfaces dinámicas con Laravel y jQuery
+https://github.com/StydeNet/cars

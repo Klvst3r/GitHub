@@ -1,0 +1,6 @@
+Uso de Stage en Git
+
+https://styde.net/uso-de-stage-en-git/
+
+
+Anteriormente vimos el flujo de trabajo de Git, en el cual vimos los 3 estados sobre los que pueden estar nuestros archivos, los cuales son modificado, consolidado (commited) y en escenario (staged). Los archivos se encuentran en etapa de modificado cuando se han detectado cambios en el archivo pero aún no se han consolidado. Se encuentran en escenario cuando se han marcado las modificaciones y su próximo paso será consolidarlo. Están consolidados cuando el archivo y su información han sido guardados en la base de datos de Git (la cual se encuentra en la carpeta oculta .git). En esta ocasión veremos qué podemos hacer mientras nuestros archivos están entre estos 3 estados.
