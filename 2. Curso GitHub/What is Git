@@ -1,0 +1,210 @@
+-	What is Git?
+
+Version Control System (VCS) for trackking changes in computer files.
+- Distributed version Control
+- Coordinates work between multiple developers
+- Who made what changes and when
+- Revert back any time
+- Local & remote repos
+
+
+Concept of Git
+- Keeps track of code history
+- Takes "snapshots" of your files
+- You decide when to make snapshots by making a commit
+- You can visit any snapshot any time
+- You can stage files befire commiting
+
+Basic Commands
+- git init			(inizializa un proyecto)
+- git add <file>	(agrega contenido del working directory al staging area)
+- git status		(revisar el estado de los archivos)
+- git commit 		(crea un primer snapshot del stagig area al repositorio)
+- git push			(subir al repositorio remoto)
+- git pull 			(traer cambios de otros desarrolladores)
+- git clone 		(trae una copia al repositorio local)
+
+Git Working (areas)
+
+			-----	working directory
+			|				|
+		git add				|
+			| 				!
+			|				v
+			----->	staging area -------
+							|			|
+							|	  git commit
+							|			|
+							v 			|
+						repository  <---
+
+
+Descarga
+https://git-scm.com
+
+Proyecto
+ls 			comando para listar contenidos
+pwd 		Para ver en que ruta de nuestro sistema esta posicionado el terminal
+
+/proyecto
+	index.html
+	app.js
+
+Terminal
+git bash here
+
+git ini 	Para inicializar un proyeto
+
+git status 	Para ver el estado de nuestros archivos (archivos no se agregan al stagin area)
+
+git add 	Para agregar un archivo al staging area
+
+git add app.js
+git add index.html
+
+	style.css
+
+git status	
+
+git add style.css
+git status
+
+
+git commit 	Para crear un primer punto de control de nuestro codigo
+
+
+
+Configuracion email & name
+------------
+git config --global user.email "klvst3r@gmail.com"
+git config --global.name "Klvst3r"
+
+First snapshot
+---------------
+git commit -m "Mi primer commit"
+
+Historial de commits
+----------------
+git log 		Para ver todos los commit s que hemos creado
+
+git status
+
+
+Descartar cambios inmediatos 
+-------------------
+git checkout --<nombre_archivo> 	Para revertir los cambios de los archivos
+git checkout -- index.html	
+
+Ver diferencias 
+----------------
+git diff <archivo>	Para ver las diferencias hechas en los archivos
+git diff index.html
+git add index.html
+git status
+git commit (Se abre el editor para los mensajes)
+git commit -m "Mensaje con codigo HTML"
+
+Carpetas
+
+carpeta/
+
+Ignorar
+--------------
+
+.gitignore  (Crear archivo de los nombres y extensiones a ignorar)
+test
+
+git status no aparece la carpeta
+git add .gitignore
+
+Crear nueva carpeta prueba2
+
+abrir .gitignore
+	test
+	test2
+	text.txt
+
+git add . gitignore
+git commit -m "Se agrega un gitIgnore"
+
+
+Alterar archivos con miniversiones
+---------------------------------------
+git branch   (muestra las ramas del proyecto )
+
+Se quiere tener una version alternativa de este codigo
+-------------------------------------------
+Imaginando que se agrega un login
+git branch <nombre de la version)
+git branch login
+git branch
+	master
+ * login
+
+git checkout <nombre de la rama a saltar)
+git checkout login
+git branch
+
+Alterar la version del proyecto
+git status
+	Muestra cambios adicionales
+
+git add . (agrega multiples y todos los archivos)	
+git status (Se han agregado los archivos)
+
+git ignora as carpetas vacias
+
+Quisieramos comitear
+-------------------------
+git commit -m "Login en una version alternativa"
+git log
+Estamos en la rama login
+git branch
+git checkout master
+	Los archivos agregados han desaparecido, por que pertenecen a la version de login
+
+
+Si estamos en la rama login y tratamos de subir cambios a a rama nos dara un mensaje de error por que no estamos en master sino en la rama
+git remote add origin https://github.com/nombre_cuenta_git/combre_repositorio.git
+
+
+Subir codigo al repositorio remoto - GitHub
+----------------------------------
+En un proyecto real debemos subir el codigo para multiples desarrolladores
+
+Herramientas para desarrolladores que es el repositorio de codigo, es una plataforma web donde podemos subir los codigos de forma publica o privada.
+
+Debemos registrarnos, y empezar a subir codigo.
+
+Acceder y Crear un repositorio
+
+Clona el repositorio
+---------------------------
+git clone <url_repositorio>  (Clona repositorio dentro de la ruta donde estas posicionado en el sistema)
+
+gitCurso (Nombre)
+Descripcion Mi Pryecto con Git
+
+Creamos un repositorio y se sube 
+--------------------------
+echo "A git Course Test" >> README.md  (Crea un archivo con contenido)
+git init 								Inicializa el repositorio de manera local
+git add README.md 						Agrega el README al Stagging Area
+git remote add origin https://github.com/Nombre_cuenta_git/nombre_repositorio.git
+git push -u origin master
+
+O Empuja un repositorio existente desde la linea de comando
+-------------------------------------------------------------
+git remote add origin https://github.com/nombre_cuenta_git/combre_repositorio.git
+git push -u origin master
+
+0 Importa el codigo desde otro repositorio
+
+
+
+Si se elimina en local pero esta en el repositorio, se puede conar
+-------------------------------------------------
+1. Descargando el zip
+
+2. git clone <url-proyecto>
+
