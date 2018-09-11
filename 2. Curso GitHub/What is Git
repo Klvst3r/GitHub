@@ -208,3 +208,41 @@ Si se elimina en local pero esta en el repositorio, se puede conar
 
 2. git clone <url-proyecto>
 
+Ya tenemos contenido local y creamos el repositorio en GitHub
+-------------------
+1. Creamos el repositorio con el mismo nombre que en local via GitHub
+2. Creamos el README
+3. Agregamos el repositorio remoto a local
+	git remote add github git@github.com:Klvst3r/GitHub.git 
+
+4. Agregamos un nuevo remoto
+		git remote set-url origin git@github.com:Klvst3r/GitHub.git
+
+5. Actualizamos de remoto a local
+	 git pull
+
+6. Subimos contenido
+	git push origin master
+
+7. Observamos el reposorio remoto
+	git remote -v 	 
+
+8. Agregamos de Remoto a local
+	git pull git@github.com:Klvst3r/GitHub.git master
+
+9. subimos contenido al repositorio remoto
+	
+10. si no funciona borramos el remoto de local
+			git remote rm origin
+			git remote add origin 
+			git remote add github git@github.com:Klvst3r/GitHub.git 
+
+11. Plan B.
+	Eliminar repositorio remotos en lazados en local
+		git remote rm <nombre_repositorio>
+		git remote rm github
+
+	Eliminar el repositorio en GitHub y volver a crearlo sin README
+		git remote add origin git@github.com:Klvst3r/GitHub.git
+		git push -u origin master	
+
