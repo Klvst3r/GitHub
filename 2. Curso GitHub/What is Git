@@ -203,6 +203,7 @@ git push -u origin master
 
 
 Si se elimina en local pero esta en el repositorio, se puede conar
+
 -------------------------------------------------
 1. Descargando el zip
 
@@ -237,6 +238,9 @@ Ya tenemos contenido local y creamos el repositorio en GitHub
 			git remote add origin 
 			git remote add github git@github.com:Klvst3r/GitHub.git 
 
+Cuando existe un error del tipo:
+Github “fatal: remote origin already exists”
+
 11. Plan B.
 	Eliminar repositorio remotos en lazados en local
 		git remote rm <nombre_repositorio>
@@ -245,4 +249,71 @@ Ya tenemos contenido local y creamos el repositorio en GitHub
 	Eliminar el repositorio en GitHub y volver a crearlo sin README
 		git remote add origin git@github.com:Klvst3r/GitHub.git
 		git push -u origin master	
+
+
+
+Recursos
+----------------
+
+
+You are getting this error because "origin" is not available. "origin" is a convention not part of the command. "origin" is the local name of the remote repository.
+
+For example you could also write:
+
+git remote add myorigin git@github.com:myname/oldrep.git  
+git remote add testtest git@github.com:myname/oldrep.git
+
+See the manual:
+http://www.kernel.org/pub/software/scm/git/docs/git-remote.html
+
+http://www.kernel.org/pub/software/scm/git/docs/git-remote.html
+
+To remove a remote repository you enter:
+
+git remote rm origin
+
+Again "origin" is the name of the remote repository if you want to remove the "upstream" remote:
+
+git remote rm upstream
+
+
+ 13
+down vote
+
+METHOD1->
+
+Since origin already exist remove it.
+
+git remote rm origin
+git remote add origin https://github.com/USERNAME/REPOSITORY.git
+
+METHOD2->
+
+One can also change existing remote repository URL by ->git remote set-url
+
+If you're updating to use HTTPS
+
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+
+If you're updating to use SSH
+
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+
+If trying to update a remote that doesn't exist you will receive a error. So be careful of that.
+
+METHOD3->
+
+Use the git remote rename command to rename an existing remote. An existing remote name, for example, origin.
+
+git remote rename origin startpoint
+# Change remote name from 'origin' to 'startpoint'
+
+To verify remote's new name->
+
+git remote -v
+
+If new to Git try this tutorial->
+
+TRY GIT TUTORIAL
+https://try.github.io/levels/1/challenges/1
 
