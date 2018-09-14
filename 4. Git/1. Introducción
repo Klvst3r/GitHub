@@ -1,0 +1,136 @@
+Introducción
+
+https://www.youtube.com/watch?v=hxGVwUn_qpc&list=PL5B83456292CC568A
+bj
+
+Sistema de Control de Versiones
+
+Es un sistema que sirve para mantener diversas versiones de un archivo, codigo fuente, documentación o archivos de configuración.
+
+Distintas copias de archivos, scripts para automatizar copias.
+
+Existen varios sistemas
+
+Subversion, Mercury, Git
+
+Ad iferencia de otros Git guarda solo la eferencia como una foto o snapshot.
+
+Que es git
+Sistema de control de versiones para poryectos muy grandes, con velocidad y eficiencia. Popular en la comunidad de Software libre.
+
+HHerramineta de manejo de codigo fuente distribuido.
+
+Cada directorio de trabajo es un repositorio completo con el historial y capacidades de tracking y revisiones dentro de una red o con acceso a un ared central.
+
+Git es rapido y eficiente de software libre. por GNU
+
+Creado por Linus Torvals y mantenido por Unio Amano.
+
+Git modela sus datos, como un conjunto de archvios y modificaciones hechas sobre cada archivo, el directorio de git es donde se almacenan los metadatos y la base de datos de objetos para el proyecto.
+
+La clonacion es el directorio de trabajo es una copia de version del proyecto, que se sacn de la base de datos comprimida en el directorio de git y se colocan en el disco duro que se pueden colocar para su modificación.
+
+El area de preparación es un sencillo archivo, con información de lo que se incluye en la proxima confirmación. Indice.
+
+Es un estandar como area de preparación.
+
+Flujo de trabajo 
+
+1. Modificación de una serie de archivos en el directorio de trabajo 
+2. Preparas los archivos añadiendo instantaneas de ellos a tu area de preparación 
+3. Confirmas los cambios lo que toma los archivos tal cual estan en el area de preparación 
+4. Almacena esta información de instantanea de manera permanente en el directorio de git 
+5. Si una versión concreta de un archivo esta en el directorio de  git considera confirmada o commit.
+6. Si ha sifrido cambios desde que se obtuvo del repositorio pero ha sido añadido al area de preparación esta preparada denominada en git estado staged
+7. Si ha sufrido cambios desde que se obtuvo del repositorio pero no se ha preparado esta modificado o modified
+
+
+Instalación
+-----------
+
+Desde Codigo fuente o desde una paquete para plataforma
+
+Comandos de Instaación:
+
+Instalación del codigo fuente:
+----------------------------------
+Fedora
+$ yum install curl-devel expat-devel gettext-devel \ openssl-devel zlib-devel
+Debian
+$ apt-get install libcurl4-gnutls-dev libexpat1-dev gettext \ libz-dev
+
+Una vez obtenidas las dependencias:
+$ http://git-scm.com/download
+
+Se compila e instala
+
+$ tar -zxf git-1.6.0.5.tar.gz
+$ cd git-1.6-0.5
+$ make prefix=/usr/local all
+$ sudo make prefix=/usr/local install
+
+
+Una vez hecho esto, tambien puede obtener git a travez del propio git para futuras actualizaciones
+
+$ git clone git://git.kernel.org/pub/scm/git/git.git
+
+
+
+Instalacion en linux
+----------------------
+$ yum install curldevel expat.-devel gettext-devel \openssl-devel zlib-devel
+$ apt-get install git-core
+
+Instalando en Mac
+http://code.google.com/p/git-osx-installer
+$ sudo port install git-core +svn +doc +bash_completion + gitweb
+
+Instalando en Windows
+http://code.google.com/p/mysgit
+
+
+
+Configurando git
+-----------------------
+La configuracion se alamacena en tres sitios distintos.
+
+/etc/gitconfig
+Contiene valores para todos los usuarios del sistema y todos los repositorios. Si pasas la opción --system a git config, lee y escribe especificamente en este archivo.
+
+~/.gitconfig file
+Especifico a tu usuario. Puedes hacer que Git lea y escriba especificamente en este archivo pasando la opcion -global
+
+Archivo config en el directorio de git (es decir, .git/config) del reposiotrio que estes utlizando actualmente: Específico a ese repositorio. Cada nivel sobreescribe los valores del nivel anterios, por lo que los valores de .git/config tienen preferencia los de /etc/gitconfig
+
+En sistemas Windows, Git busca el archivo .gitconfig en el directorio $HOME (C:\Documets and Settings\$USER para la mayoria de usuarios). Tmbien busca en el directorio /etc/gitconfig, aunque esta ruta es relativa a la raiz MSys, que es donde quiera que decidieses instalar Git en tu sistema Windows cuando ejecutase el instalador.
+
+
+
+OParametros de configuración
+----------------------------
+En linea de comandos establecer Nombre de Usuarios y correo electronico es información para los commits y los usuarios que yransportaran la información al repositorios remotos.
+
+$ git config --global user.name "Klvst3r"
+$ git config --global user.email klvst3r@gmail.com
+
+Editor
+$ git config --global core.editor subl
+
+Herramineta de diferencias
+$ git config --global merge.tool vimdiff
+
+
+Comprobando configuración
+---------------------------
+Para listar todas las propiedades 
+git config --list
+
+Tambien se puede comprobar por valor y clave especifica
+git config [clave]
+git config user.name
+
+GitHub
+------------
+Es la  plataforma con una interfaz donde se reflejan los repositorio remotos y que permite una administración de los repositorios y cambios
+
+
