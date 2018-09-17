@@ -1,0 +1,129 @@
+Repositorios
+
+https://www.youtube.com/watch?v=RjfaWoS3KgE&index=2&list=PL5B83456292CC568A
+
+Integrando algun proyecto web
+
+
+Instalando Git
+-------------------
+http://git-scm.com/donwload
+
+
+Git Bash y git gui
+--------------------
+Consola de mediante linea de comandos y la otra es una interfaz grafica en la administración del proyecto en git.
+
+Comenzando con GitHub
+------------------------
+Creare una cuenta con usuario y contraseña.
+Git y GitHub ons diefenrentes Github es la plataforma de los repositorios en Internet y git es el adminitrasador local.
+
+Trabajo con git
+------------------
+Actualizaiones en GitHub ior acmabios en los usuarios que se siguen.
+Edición de perfil.
+
+Cuenta de GitHub
+-----------------------
+Crear cuenta gratuita.
+Colaboración en privado
+
+
+Enlazr GitHub con Git
+------------------------
+Ya configurado coreo y contraseña, hay que hacer una llave publica, para poder conectar con github y poder hacer colaboración.
+
+
+
+Crear llave publica
+----------------------
+# ssh-keygen -t rsa -C "tu_correo"
+
+Se genera la llave publica, y si podremos se guarda n la carpeta personal o cuando enesmo   
+
+Si se tiene una lave anterior se puede sovbreescribir.
+
+Esa es la que se debe enviar a los colaboradores, guardada en la carpeta personal.
+
+Se abre con un aditr de texto y se puede agregar en el repositorio de GitHub.
+
+Cuanta > SSH Keys > add an SSH Key
+
+Escribir el titulo y pegar la clave, -> Add Key
+
+Una vez generada se puede empezar a trabajar.
+
+
+
+Terminal
+-----------
+pwd   	Rura actual
+ls 		Contenido de la carpeta
+cd 		Cambio de directorio
+(master) Es un repositorio de GitHub.
+cd .. 		Regresar una carpeta
+mkdir 		Crear una carpeta
+mkdir cursoGit
+cd cusoGit
+mkdir css
+mkdir images
+touch index.html
+ls
+cd css
+touch estilos.css
+cd ..
+cd images
+clear	limpiear consola
+
+
+En GitHub
+------------------
+En GitHub Crear un nuevo repositorio
+Utilizar el mismo nombre de la carpeta creada "cursoGit"
+Se recoienda siempre crear siempre primero el repositorio y clonarlo en local.
+Escribir decripción y marcar como publico.
+El README puede ser opcional
+
+GitHub envia al usuario los pasos a realizar para conectar el repositorio con la carpeta local
+
+Global setup
+------------------
+git config --global user.name "Klvst3r"
+git config --global user.email klvst3r@gmail.com
+
+
+Siguientes pasos
+----------------
+mkdir cursoGit
+cd cursoGit
+git init
+touch README
+git add README
+git commit -m "First Commit"
+git remote add origin git@gihub.com:klvst3r/cursoGir.git
+git push -u origin master
+
+Esite el repo?
+-----------------
+cd existing_git_repo
+git remote add origin git@github.com:klvst3r/cursoGit.git
+
+
+Iniializazing repo
+------------------
+En local
+git init
+touch README
+gt add README
+git status
+git commit -m "Primer Commit"
+
+Coenectar git a Github
+-----------------------------
+git remote add origin git@github.com:klvst3r/cursoGit.git
+Se hace la conexin al servidor. para subirla al servidor
+con
+git push -u origin master (password de github)
+
+Los cambios se subieron a master
