@@ -1,0 +1,108 @@
+Repositorios 2/2
+
+https://www.youtube.com/watch?v=QFfgNGaHIXU&index=3&list=PL5B83456292CC568A
+
+
+En el video pasado se vio como crear un repositorio desde la consola, creando unas cuentas corpies
+
+En la estructura del sepositorio.
+
+Dentro de la carpeta inizializada tendremos .git
+
+Ssi ya no quiero el repositorio en GitHub
+
+Eliminar repositorio
+---------------------
+Abrir el repositorio, se puede renombrar.
+
+Hasta la parte inferior donde existe una opcion "delete repositoy", Para eliminarlo debemos escribir el mismo nombre del repositorio para poder eliminar y a manera de confirmación del repositorio.
+
+Se debe escribir exactamente el mismo nombre del repositorio.
+
+
+Repositorios
+----------------
+ Repositorio de Klinsmann
+ https://github.com/Klinsmann
+
+ https://github.com/Klinsmann/Charitable
+ https://github.com/Klinsmann/videotutoriales/blob/master/HTML/parte%201/index.html
+https://github.com/Klinsmann/iTutoriales.com
+
+https://github.com/kacosta
+https://github.com/Klinsmann?language=css&tab=repositories
+https://github.com/Klinsmann/iTutoriales.com
+
+
+Iniciando con el nuevo repositorio
+-------------------------------------
+Nuev Repositorio
+cursoGit
+
+Creado el repositorio
+
+En consola
+--------------
+Crear una carpeta con el mismo nombre
+
+accediendo al directorio principal donde estara el repoitorio local conectado con github
+mkdir MiGitHub
+cd MiGithib/
+mkdir cursoGit
+
+cd cursoGit
+
+Inicializando el repositorio
+------------------------
+cd cursoGit
+git init
+touch README.md 	(Con extencion modificable para user codigo html en lugar de texto plano)
+git status
+git add README.md
+git status
+git commit -m "First Commit"
+
+
+Cnexion de git a github
+---------------------------
+Solo una vez cuando se crea el repositorio
+
+$ git remote add origin git@github.com:Klvst3r/cursoGit.git
+Se hace la conexion con github
+
+git push origi master
+Escribir las credenciales
+
+
+En Github
+------------
+Se verifica el repositorio creado en GitHub.
+Se hace modificaciones al archivo README.md
+# Texto agregado al archivo README.md
+Se guarda y en consola
+
+$git status
+git add  README.md
+git status
+git commit -m "Modificación a README"
+git push -u origin master
+
+Se verifica en Github
+---------------------
+En Git hub
+Si anteponemos un # Github lo interpreta como un titulo en HitHub
+
+* primera lista
+	item1
+
+Para ver todos los commit ir a "commits" en github con sus respectivas modificaciones.
+
+Se edita de nuevo el archivo borrando contenido
+
+git add README:md
+git commit -m "Tercer commit"	 
+git push -u origin master
+
+Lsitado de commits con los cambios realizados.
+
+
