@@ -1,0 +1,71 @@
+Ramas
+
+https://www.youtube.com/watch?v=3WJ_WM5qXg0&index=4&list=PL5B83456292CC568A
+
+Las ramas son utilizadas para desarrollar funcionalidades aisladas unas de otras. La rama master es la rama por defecto cuando creas un repositorio. Usa otras ramas para el desarrollo y fusionarlas de regreso a la rama principal al terminar.
+
+
+Las ramas son basicamente una separacioon de la rama principal de la rama master. Podemos tener un proyecto principal y en una rama desarrollo podremos trabajar hacer pruebas e incorporar algunas librerias con las que no se trabaja cnormalmente y a manera experimental simpleente como testeo y si todo correo bien y se decide incorporarse al proyecto prioncipal, se incorpora a la rama master, es algo como las pruebas beta o borradores.
+
+Trbajaresmos con nuestra rama personal.
+
+En git
+--------
+Con nuestro repositorio puede tener ramas independientes, cada uno tiene su rama master.
+
+
+Trabajaremos con cursoGit.
+
+En la seccion de archivos, trbajaremos con "Branches", que nos muestra cuantas ramas tenemos. Los comints estan esn esta rama.
+
+
+En Local
+--------------
+Para crear una nueva rama existen dos tipos de comandos
+
+El primero es solo para crear la rama y despues hay que acceder a ella.
+
+El segundo es crear la rama y acceder automaticamente a ella 
+
+Crear e ingresar
+git checkout -b <nombre_rama>
+git checkout -b desarrollo 
+
+git checkout master
+git checkout desarrollo
+
+Una rama no estara disponible en la cuenta de github s no se sube. Si se crea una rama y no se sube con push la rama solo estara de manera local.
+
+Para subirla a l servidor.
+
+git push origin <nombre_rama>
+ej.
+git push origin desarrollo
+
+Solicitara contraseña y la rama ya estara arriba en GitHub
+
+Ingresando en GitHub nos indicara que ya existen dos ramas.
+
+En GiHub se hacen las modificaciones necesarias.
+
+En la rama desarrollo se crea un nuevo archivo de texto.
+
+ejemplo.html
+css/estilos.css
+js/script.js
+
+ahora git status
+
+Indicando que se tienen archivos que no se han subido en la rama de desarrollo.
+
+Se suben a la rama desarrollo
+
+git add .
+git status
+git commit -m "agregando archivos principales del sitio"
+git push origin desarrollo
+
+
+git checkout desarrollo
+git status
+
