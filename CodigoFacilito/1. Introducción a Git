@@ -1,0 +1,13 @@
+Curso de Git
+
+Working Directory: Es donde trabajamos y editamos con nuestros proyecctos
+
+Staging Area: Aqui es donde escogemos que archivos están listos para pasar al tercer estado, al igual que decidimos que archivos no están listos por el momento.
+
+Repository. Aqui es el registro de todo nuesto proyecto
+
+Flujo de trabajo.
+1. Modificar, crear, editar una serie de archivos.
+2. Escoger los archivos que están listos.
+3. Registro de nuestro proyecto
+
